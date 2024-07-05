@@ -7,7 +7,7 @@
 
 <https://w3id.org/emmo/domain/concrete> a owl:Ontology ;
     dcterms:contributor " "@en ;
-    dcterms:creator "Alexandre Ouziam, Heidelberg Material"@en,
+    dcterms:creator "Alexandre Ouzia, Heidelberg Materials"@en,
         "Francesca L. Bleken, SINTEF"@en,
         "Jesper Friis, SINTEF"@en ;
     dcterms:title "Concrete domain ontology"@en ;
