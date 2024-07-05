@@ -1,0 +1,171 @@
+@prefix : <http://emmo.info/emmo/concrete#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://emmo.info/emmo/concrete> a owl:Ontology ;
+    owl:versionIRI "0.0.1" ;
+    dcterms:contributor "SINTEF"@en,
+        "Heidelberg"@en ;
+    dcterms:creator "Alexandre Ouzia"@en,
+        "Francesca L. Bleken"@en,
+        "Jesper Friis"@en ;
+    dcterms:title "Concrete domain ontology"@en ;
+    owl:imports <https://w3id.org/emmo> ;
+    owl:versionInfo "0.0.1"@en .
+
+:EMMO_00f37d7f-4d04-5f83-9032-80e40a4e593b a owl:Class ;
+    rdfs:comment "it has the basic crystal structure of C3S but with substitution in the lattice. It is the major, and characteristic, phase in Portland cement: its contents varies from 50% to 70% of CEM I"@en ;
+    rdfs:subClassOf ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    skos:altLabel "C3S"@en ;
+    skos:prefLabel "Alite"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Alite is a solid solution of impure C3S. Ca3SiO5, sometimes formulated as 3CaO·SiO2 (C3S in cement chemist notation), typically with 3-4% of substituent oxides."@en .
+
+:EMMO_0f0a7906-645d-5ab3-a292-c811fa71a7b2 a owl:Class ;
+    rdfs:comment "Strätlingite forms in the later stages of cement hydration, often as a result of pozzolanic reactions between calcium hydroxide (CH), produced by the hydration of Portland cement, and silica (SiO2) from SCMs. These reactions can also involve alumina (Al2O3), leading to the formation of strätlingite. The presence of SCMs not only provides additional sources of silica and alumina but also lowers the pH of the pore solution, which can favor the formation of strätlingite."@en ;
+    rdfs:subClassOf owl:Thing ;
+    skos:prefLabel "Strätlingite"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "C2ASH8 in cement chemistry notation"@en .
+
+:EMMO_1317e1d1-a718-5b92-a329-37d1df0e8072 a owl:Class ;
+    rdfs:comment "it ranges from 5% to 20% in portland cement"@en ;
+    rdfs:subClassOf owl:Thing ;
+    skos:prefLabel "Belite"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Belite is a solid solution of impure C2S:  2 CaO · SiO2 and minor minerals."@en .
+
+:EMMO_1e877c29-9210-56d3-b025-f8300778c79a a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    skos:prefLabel "pore"@en .
+
+:EMMO_280482e0-e785-55d9-a8b8-17e4f1409953 a owl:Class ;
+    rdfs:subClassOf :EMMO_80f7966a-4110-5f4f-8a18-df231546067f,
+        ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    skos:prefLabel "Calcite"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "carbonate mineral and the most stable polymorph of calcium carbonate (CaCO3)."@en .
+
+:EMMO_28b37be2-f7ea-5580-b422-35fdc1970036 a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    skos:prefLabel "Morphology"@en .
+
+:EMMO_2f27cae7-59d7-5f1d-ae71-995ddfffacd9 a owl:AnnotationProperty ;
+    skos:prefLabel "morphology"@en .
+
+:EMMO_318ed1bf-cc93-520a-8844-012e21810202 a owl:Class ;
+    rdfs:subClassOf :EMMO_9ae143e0-5925-585b-9fb2-0d4b5c6d14f9,
+        ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    skos:prefLabel "Metakaolin"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a dehydroxylated form of the clay mineral kaolinite. Metakaolin is commonly used in the production of ceramics, but is also used as cement replacement in concrete."@en .
+
+:EMMO_58dbc731-fcad-5a6e-857b-e7b7cc85dff9 a owl:Class ;
+    rdfs:comment "They are formed when tricalcium aluminate (3CaO·Al2O3, also noted C3A) reacts with a dissolved calcium salt (CaX). CaX is most commonly CaSO4, but can also be CaCO3 giving rise to sulfoaluminate, or carboaluminate, respectively. "@en ;
+    rdfs:subClassOf owl:Thing ;
+    skos:prefLabel "Aft"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "AFt Phases refer to the calcium Aluminate Ferrite trisubstituted, or calcium aluminate trisubstituted, phases present in hydrated (or hardened) cement paste. They are crystalline hydrates with generic formula 3CaO·(Al,Fe)2O3·3CaX·nH2O "@en .
+
+:EMMO_7159517f-d671-5b27-9ec4-a59e3ee34426 a owl:AnnotationProperty ;
+    skos:prefLabel "chemicalFormula"@en .
+
+:EMMO_87050a50-356e-5986-9910-e95ec90f5214 a owl:Class ;
+    rdfs:comment "It does not occur in nature, but is an important mineral phase in Portland cement (from 2 to 12%)"@en ;
+    rdfs:subClassOf ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    skos:altLabel "celite"@en ;
+    skos:prefLabel "TricalciumAluminate"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Ca3Al2O6, often formulated as 3CaO·Al2O3"@en .
+
+:EMMO_ac51ae7e-bc02-56d5-887b-c377d6087ae1 a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    skos:prefLabel "BulkModulus"@en .
+
+:EMMO_b08b196d-4293-5511-ac22-dc08b44f16fb a owl:Class ;
+    rdfs:subClassOf :EMMO_80f7966a-4110-5f4f-8a18-df231546067f,
+        ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    skos:prefLabel "Aragonite"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "one of the three most common naturally occurring crystal forms of calcium carbonate ( CaCO 3), the others being calcite and vaterite"@en .
+
+:EMMO_c12df015-a0e4-5df0-9e7c-fda389d50d9e a owl:Class ;
+    rdfs:comment "The amount and properties of this phase influence significantly the mechanical and durability properties. itt fills about 50% of the space of mature portland cement paste"@en ;
+    rdfs:subClassOf owl:Thing ;
+    skos:prefLabel "C-S-H"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Calcium Silicate Hydrate. The main hydrate and binding phase of Portland cement paste.C-S-H can be obtained by hydration of C3S and β-C2S or by precipitation from aqueous solutions containing a Ca salt and silicate ions. C-S-H has a wide range of chemical composition which explains why it's written C-S-H rather than CSH. "@en .
+
+:EMMO_c5e77d81-cfd5-5905-b033-34b6d9e81c42 a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    skos:prefLabel "YoungModulus"@en .
+
+:EMMO_cbfdda6b-af4c-5ac9-a35b-7cdb088df8ef a owl:AnnotationProperty ;
+    rdfs:comment "C = CaO, etc"@en,
+        "see https://en.wikipedia.org/wiki/Cement_chemist_notation"@en ;
+    skos:prefLabel "cementChemistNotation"@en .
+
+:EMMO_d614f742-272e-526e-bfac-75f16b4efec4 a owl:Class ;
+    rdfs:subClassOf ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    skos:prefLabel "TriCarboaluminate"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 " is the carbonate equivalent of ettringite,"@en .
+
+:EMMO_db71390f-9d3d-5751-8320-fe7da5e84210 a owl:Class ;
+    rdfs:subClassOf :EMMO_80f7966a-4110-5f4f-8a18-df231546067f,
+        ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    skos:prefLabel "Vaterite"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a polymorph of calcium carbonate (CaCO3)."@en .
+
+:EMMO_dbe42a42-4b44-570c-abb5-c039d10017f8 a owl:Class ;
+    rdfs:comment "it ranges from 2% to 16% in Portland cement.  It also exists in nature as the rare mineral brownmillerite. "@en ;
+    rdfs:subClassOf owl:Thing ;
+    skos:altLabel " ferrite"@en,
+        "C4AF"@en ;
+    skos:prefLabel "TetracalciumAluminoferrite"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a dark brown crystalline phase commonly found in cements."@en .
+
+:EMMO_ddc23e88-6f5a-5b32-8140-efa9506c1161 a owl:Class ;
+    rdfs:subClassOf :EMMO_9ae143e0-5925-585b-9fb2-0d4b5c6d14f9,
+        ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    skos:prefLabel "Palygorskite"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a magnesium aluminium phyllosilicate with the chemical formula (Mg,Al)2Si4O10(OH)·4(H2O) that occurs in a type of clay soil"@en .
+
+:EMMO_e089659e-0bcc-5572-9fbb-29d1a58b6539 a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    skos:altLabel " EXISTS IN EMMO"@en,
+        "TO BE REMOVED"@en ;
+    skos:prefLabel "voltage"@en .
+
+:EMMO_e3e9fab8-cf2c-5024-941e-8fbd2a316a64 a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    skos:prefLabel "Hydrogarnet"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Crystalline phase that belongs to the garnet group of minerals, characterized by its general formula C3AH6​ in cement chemist notation"@en .
+
+:EMMO_ec9e0222-9e8f-5485-8766-2395d3a34b14 a owl:Class ;
+    rdfs:comment " It contributes to the alkalinity of the cement paste, which is important for the protection of steel reinforcement against corrosion. It also react with pozzolanic materials to form C-S-H"@en ;
+    rdfs:subClassOf owl:Thing ;
+    skos:altLabel "CH"@en ;
+    skos:prefLabel "Portlandite"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Calcium Hydroxide. This is a byproduct of the hydration of calcium silicates."@en .
+
+:EMMO_f60cf173-6228-5fd0-8951-43e2bb890c82 a owl:Class ;
+    rdfs:comment "Initially forms during the early stages of hydration as a result of the reaction between tricalcium aluminate (C3A) and gypsum (added to the cement to control setting time) in the presence of water."@en ;
+    rdfs:subClassOf owl:Thing ;
+    skos:altLabel "TriSulfoaluminate"@en ;
+    skos:prefLabel "Ettringite"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hydrous calcium aluminium sulfate mineral with formula: 3CaO·Al2O3·3CaSO4·32H2O, also abbreviated as C6AS3H32 in cement chemist notation. It is a colorless to yellow mineral crystallizing in the trigonal system. The prismatic crystals are typically colorless, turning white on partial dehydration."@en .
+
+:EMMO_f75dc0f3-e620-582a-97dd-b535846646b7 a owl:Class ;
+    rdfs:comment "AFm phases are important hydration products in the hydration of Portland cements and hydraulic cements."@en ;
+    rdfs:subClassOf ns1:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
+    skos:prefLabel "Afm"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An AFm phase is an \"alumina, ferric oxide, monosubstituted\" phase, or aluminate ferrite monosubstituted, or Al 2O 3, Fe 2O 3 mono, in cement chemist notation (CCN)."@en .
+
+:EMMO_ffd69816-d56c-5d7d-87c8-09498f0b32c7 a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    skos:prefLabel "HemiCarboaluminate"@en .
+
+:EMMO_9ae143e0-5925-585b-9fb2-0d4b5c6d14f9 a owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    skos:prefLabel "Clay"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a type of fine-grained natural soil material containing clay minerals[1] (hydrous aluminium phyllosilicates, e.g. kaolinite, Al2Si2O5(OH)4)."@en .
+
+:EMMO_80f7966a-4110-5f4f-8a18-df231546067f a owl:Class ;
+    rdfs:subClassOf ns1:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
+    skos:prefLabel "Limestone"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 " a sedimentary rock made of calcium carbonate (CaCO3), usually in the form of calcite or aragonite. It may contain considerable amounts of magnesium carbonate (dolomite) as well. However, minor constituents of clay, iron carbonate, feldspar, pyrite, and quartz is also commonly present"@en .
+
