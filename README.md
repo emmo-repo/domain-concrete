@@ -50,7 +50,7 @@ Attributions and credits
 
 
 ### Contributing projects
-- [MatCHMaker]
+- [MatCHMaker] (2023-2027), that has received funding from the European Union's Horizon Europe research and innovation programme under grant agreement N 101091687.
 
 
 License
