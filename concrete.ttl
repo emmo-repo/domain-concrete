@@ -1,17 +1,15 @@
-@prefix : <http://emmo.info/emmo/concrete#> .
+@prefix : <https://w3id.org/emmo/concrete#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ns1: <https://w3id.org/emmo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<http://emmo.info/emmo/concrete> a owl:Ontology ;
+<https://w3id.org/emmo/concrete> a owl:Ontology ;
     owl:versionIRI "0.0.1" ;
-    dcterms:contributor "SINTEF"@en,
-        "Heidelberg"@en ;
-    dcterms:creator "Alexandre Ouzia"@en,
-        "Francesca L. Bleken"@en,
-        "Jesper Friis"@en ;
+    dcterms:creator "Alexandre Ouzia, Heidelberg Materials"@en,
+        "Francesca L. Bleken, SINTEF"@en,
+        "Jesper Friis, SINTEF"@en ;
     dcterms:title "Concrete domain ontology"@en ;
     owl:imports <https://w3id.org/emmo> ;
     owl:versionInfo "0.0.1"@en .
@@ -168,4 +166,3 @@
     rdfs:subClassOf ns1:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
     skos:prefLabel "Limestone"@en ;
     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 " a sedimentary rock made of calcium carbonate (CaCO3), usually in the form of calcite or aragonite. It may contain considerable amounts of magnesium carbonate (dolomite) as well. However, minor constituents of clay, iron carbonate, feldspar, pyrite, and quartz is also commonly present"@en .
-
