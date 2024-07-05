@@ -45,8 +45,8 @@ Attributions and credits
 ------------------------
 ### Authors
 - Alexandre Ouzia, Heidelberg Materials, Germany
+- Francesca Bleken, SINTEF, Norway
 - Jesper Friis, SINTEF, Norway
-- Tomas Manik, NTNU, Norway
 
 
 ### Contributing projects
