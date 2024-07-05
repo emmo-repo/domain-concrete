@@ -1,19 +1,18 @@
-@prefix : <http://emmo.info/emmo/domain-concrete#> .
+@prefix : <https://w3id.org/emmo/domain/concrete#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ns1: <https://w3id.org/emmo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<http://emmo.info/emmo/domain-concrete> a owl:Ontology ;
-    dcterms:contributor "SINTEF"@en,
-        "SINTEF Industry"@en ;
-    dcterms:creator "Alexandre Ouzia"@en,
-        "Francesca L. Bleken"@en,
-        "Jesper Friis"@en ;
+<https://w3id.org/emmo/domain/concrete> a owl:Ontology ;
+    dcterms:contributor " "@en ;
+    dcterms:creator "Alexandre Ouziam, Heidelberg Material"@en,
+        "Francesca L. Bleken, SINTEF"@en,
+        "Jesper Friis, SINTEF"@en ;
     dcterms:title "Concrete domain ontology"@en ;
     owl:imports <https://w3id.org/emmo> ;
-    owl:versionInfo "0.01"@en .
+    owl:versionInfo "0.0.1"@en .
 
 :EMMO_00f37d7f-4d04-5f83-9032-80e40a4e593b a owl:Class ;
     rdfs:comment "it has the basic crystal structure of C3S but with substitution in the lattice. It is the major, and characteristic, phase in Portland cement: its contents varies from 50% to 70% of CEM I. It is responsible for the early age strength"@en ;
@@ -38,8 +37,8 @@
     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The table with the mix design overview together with the results (strength, and possiblity other performance criterion) "@en .
 
 :EMMO_1270fb53-7e66-5b6b-8353-e097489526db a owl:Class ;
-    rdfs:subClassOf :EMMO_80f7966a-4110-5f4f-8a18-df231546067f,
-        ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    rdfs:subClassOf ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a,
+        :EMMO_80f7966a-4110-5f4f-8a18-df231546067f ;
     skos:altLabel "CaMg(CO₃)₂"@en ;
     skos:prefLabel "Dolomite"@en .
 
@@ -106,8 +105,8 @@
     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Katoite is a hydrogarnet phase found in some hydrated cements."@en .
 
 :EMMO_280482e0-e785-55d9-a8b8-17e4f1409953 a owl:Class ;
-    rdfs:subClassOf :EMMO_80f7966a-4110-5f4f-8a18-df231546067f,
-        ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    rdfs:subClassOf ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a,
+        :EMMO_80f7966a-4110-5f4f-8a18-df231546067f ;
     skos:altLabel "CaCO₃"@en ;
     skos:prefLabel "Calcite"@en ;
     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "carbonate mineral and the most stable polymorph of calcium carbonate (CaCO3)."@en .
@@ -137,8 +136,8 @@
     skos:prefLabel "morphology"@en .
 
 :EMMO_318ed1bf-cc93-520a-8844-012e21810202 a owl:Class ;
-    rdfs:subClassOf :EMMO_9ae143e0-5925-585b-9fb2-0d4b5c6d14f9,
-        ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    rdfs:subClassOf ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a,
+        :EMMO_9ae143e0-5925-585b-9fb2-0d4b5c6d14f9 ;
     skos:altLabel "Al₂Si₂O₇"@en ;
     skos:prefLabel "Metakaolin"@en ;
     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a dehydroxylated form of the clay mineral kaolinite. Metakaolin is commonly used in the production of ceramics, but is also used as cement replacement in concrete."@en .
@@ -324,8 +323,8 @@
     skos:prefLabel "InteractionMori-Tanaka"@en .
 
 :EMMO_b08b196d-4293-5511-ac22-dc08b44f16fb a owl:Class ;
-    rdfs:subClassOf :EMMO_80f7966a-4110-5f4f-8a18-df231546067f,
-        ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    rdfs:subClassOf ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a,
+        :EMMO_80f7966a-4110-5f4f-8a18-df231546067f ;
     skos:altLabel "CaCO₃"@en ;
     skos:prefLabel "Aragonite"@en ;
     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "one of the three most common naturally occurring crystal forms of calcium carbonate ( CaCO 3), the others being calcite and vaterite"@en .
@@ -405,8 +404,8 @@
     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Image in black and white showing the pore space segment as obtained by clustering algorithms"@en .
 
 :EMMO_db71390f-9d3d-5751-8320-fe7da5e84210 a owl:Class ;
-    rdfs:subClassOf :EMMO_80f7966a-4110-5f4f-8a18-df231546067f,
-        ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    rdfs:subClassOf ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a,
+        :EMMO_80f7966a-4110-5f4f-8a18-df231546067f ;
     skos:altLabel "CaCO₃"@en ;
     skos:prefLabel "Vaterite"@en ;
     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a polymorph of calcium carbonate (CaCO3)."@en .
@@ -419,8 +418,8 @@
     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "AfmHemiCarboaluminate is a type of AFm phase with carbonate and hydroxide ions."@en .
 
 :EMMO_ddc23e88-6f5a-5b32-8140-efa9506c1161 a owl:Class ;
-    rdfs:subClassOf :EMMO_9ae143e0-5925-585b-9fb2-0d4b5c6d14f9,
-        ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    rdfs:subClassOf ns1:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a,
+        :EMMO_9ae143e0-5925-585b-9fb2-0d4b5c6d14f9 ;
     skos:altLabel "(Mg,Al)₂Si₄O₁₀(OH)·4(H₂O)"@en ;
     skos:prefLabel "Palygorskite"@en ;
     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a magnesium aluminium phyllosilicate with the chemical formula (Mg,Al)2Si4O10(OH)·4(H2O) that occurs in a type of clay soil"@en .
