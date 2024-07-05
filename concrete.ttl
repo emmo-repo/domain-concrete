@@ -6,7 +6,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 <https://w3id.org/emmo/domain/concrete> a owl:Ontology ;
-    dcterms:contributor " "@en ;
     dcterms:creator "Alexandre Ouzia, Heidelberg Materials"@en,
         "Francesca L. Bleken, SINTEF"@en,
         "Jesper Friis, SINTEF"@en ;
