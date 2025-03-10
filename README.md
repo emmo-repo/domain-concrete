@@ -4,8 +4,8 @@ Domain Ontology for Concrete (DOC)
 ==================================
 This is work in progress.
 
-The Concrete Domain Ontology is intended to be a domain ontology
-for concrete development.  The intension is to cover all relevant
+The Domain Ontology for Concrete is intended to be a domain ontology
+for development of concrete.  The intention is to cover all relevant
 aspect of concrete development, including:
   - composition & phases
   - mixing design & casting
@@ -23,7 +23,7 @@ compatibilies:
 
 | Imported Ontologies     | Version           |
 | ----------------------- | ----------------- |
-| [EMMO]                  | 1.0.0-rc1         |
+| [EMMO]                  | 1.0.0             |
 | [domain-microstructure] | 0.3               |
 
 
