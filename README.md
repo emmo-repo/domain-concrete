@@ -1,7 +1,7 @@
 
 
-Concrete Domain Ontology
-========================
+Domain Ontology for Concrete (DOC)
+==================================
 This is work in progress.
 
 The Concrete Domain Ontology is intended to be a domain ontology
