@@ -1,0 +1,93 @@
+@prefix : <https://w3id.org/emmo/application/concrete#> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://w3id.org/emmo/application/concrete#> .
+
+<https://w3id.org/emmo/application/concrete> rdf:type owl:Ontology ;
+                                              owl:versionIRI <https://w3id.org/emmo/application/concrete/0.0.1> ;
+                                              owl:imports <https://w3id.org/emmo/domain/concrete/0.0.1> ;
+                                              dcterms:creator "Alexandre Ouzia, Heidelberg Materials"@en ,
+                                                              "Francesca L. Bleken, SINTEF"@en ,
+                                                              "Jesper Friis, SINTEF"@en ;
+                                              dcterms:title "Application Ontology for Concrete within MatCHMaker"@en ;
+                                              owl:versionInfo "0.0.1"@en .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/emmo#Image
+:Image rdf:type owl:Class ;
+          rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
+          rdfs:comment "" .
+
+
+###  https://w3id.org/emmo/application/concrete#EMMO_13e82238-e959-5e91-b0d2-152ab4dfcc94
+:EMMO_13e82238-e959-5e91-b0d2-152ab4dfcc94 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
+                                           skos:prefLabel "PhaseAssemblageQXRD"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A table with two columns: the first columns shows the list of detected cristalline phase, the second one their amount"@en .
+
+
+###  https://w3id.org/emmo/application/concrete#EMMO_4e2494aa-3ec9-5692-b221-b27b6ad049eb
+:EMMO_4e2494aa-3ec9-5692-b221-b27b6ad049eb rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
+                                           skos:prefLabel "PhaseAssemblageOverall"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A table with as a first column the full list of detected phases, in the second to fourth the amounts detected by QXRD, TGA and MLfromSEM. This tables allows for a global picture"@en .
+
+
+###  https://w3id.org/emmo/application/concrete#EMMO_64a27830-5b94-50a9-b6cd-0e2a0e7a65d4
+:EMMO_64a27830-5b94-50a9-b6cd-0e2a0e7a65d4 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
+                                           skos:prefLabel "PhaseAssemblageTGA"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A table with two columns: the first columns shows the list of detected by ThermoGravimetry Analysis, the second one their amount"@en .
+
+
+###  https://w3id.org/emmo/application/concrete#EMMO_8a452420-4727-5a0b-94bf-6e8b05ab8fac
+:EMMO_8a452420-4727-5a0b-94bf-6e8b05ab8fac rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
+                                           skos:prefLabel "PhaseAssemblageMLfromSEM"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A table with two columns: the first columns shows the list of detected by ML tools applied on the SEM BSE and SEM EDS data, the second column show their amount"@en .
+
+
+
+###  https://w3id.org/emmo/domain/concrete#EMMO_284b42c0-2dbf-5b36-852f-f40a744c8d3f
+:EMMO_284b42c0-2dbf-5b36-852f-f40a744c8d3f rdf:type owl:Class ;
+                                           rdfs:subClassOf :Image ;
+                                           skos:prefLabel "ClusterAnhydrous"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Image in black and white showing the Anhydrous segment as obtained by clustering algorithms"@en .
+
+
+
+###  https://w3id.org/emmo/domain/concrete#EMMO_5c0e705c-31c7-534b-9881-72bbf5f892fa
+:EMMO_5c0e705c-31c7-534b-9881-72bbf5f892fa rdf:type owl:Class ;
+                                           rdfs:subClassOf :Image ;
+                                           skos:prefLabel "ClusterPortlandite"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Image in black and white showing the Portlandite segment as obtained by clustering algorithms"@en .
+
+
+
+###  https://w3id.org/emmo/domain/concrete#EMMO_aa9d6fe5-daae-5cb7-afbe-a02808c5bbf0
+:EMMO_aa9d6fe5-daae-5cb7-afbe-a02808c5bbf0 rdf:type owl:Class ;
+                                           rdfs:subClassOf :Image ;
+                                           skos:prefLabel "ClusterHydratesExceptPortlandite"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Image in black and white showing the hydrates segment (the portlandite being excluded) as obtained by clustering algorithms"@en .
+
+
+
+
+###  https://w3id.org/emmo/domain/concrete#EMMO_d525e674-b5ce-5651-abfc-a2dc1d54d806
+:EMMO_d525e674-b5ce-5651-abfc-a2dc1d54d806 rdf:type owl:Class ;
+                                           rdfs:subClassOf :Image ;
+                                           skos:prefLabel "ClusterPorosity"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Image in black and white showing the pore space segment as obtained by clustering algorithms"@en .
+
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
