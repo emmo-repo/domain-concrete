@@ -1,9 +1,9 @@
 @prefix : <https://w3id.org/emmo/domain/concrete#> .
-@prefix emmo: <https://w3id.org/emmo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <https://w3id.org/emmo#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -43,19 +43,9 @@
 #    Classes
 #################################################################
 
-###  https://w3id.org/emmo/domain/concrete#AFtPhase
-:AFtPhase rdf:type owl:Class ;
-          rdfs:subClassOf emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a .
-
-
-###  https://w3id.org/emmo/domain/concrete#CalciumSulfateAnhydrite
-:CalciumSulfateAnhydrite rdf:type owl:Class ;
-                         rdfs:subClassOf :PortlandCementAnhydrousPhase .
-
-
 ###  https://w3id.org/emmo/domain/concrete#EMMO_00f37d7f-4d04-5f83-9032-80e40a4e593b
 :EMMO_00f37d7f-4d04-5f83-9032-80e40a4e593b rdf:type owl:Class ;
-                                           rdfs:subClassOf :PortlandCementAnhydrousPhase ;
+                                           rdfs:subClassOf :EMMO_383f8673-23de-410a-8e7b-3c5d0504b84d ;
                                            rdfs:comment "it has the basic crystal structure of C3S but with substitution in the lattice. It is the major, and characteristic, phase in Portland cement: its contents varies from 50% to 70% of CEM I. It is responsible for the early age strength"@en ;
                                            skos:prefLabel "Alite"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Alite is a solid solution of impure C3S. Ca3SiO5, sometimes formulated as 3CaO·SiO2 (C3S in cement chemist notation), typically with 3-4% of substituent oxides."@en .
@@ -69,7 +59,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_0f0a7906-645d-5ab3-a292-c811fa71a7b2
 :EMMO_0f0a7906-645d-5ab3-a292-c811fa71a7b2 rdf:type owl:Class ;
-                                           rdfs:subClassOf :RareHydrate ;
+                                           rdfs:subClassOf :EMMO_4a67f042-fbf0-40e0-9d45-41c69be77403 ;
                                            rdfs:comment "Strätlingite forms in the later stages of cement hydration, often as a result of pozzolanic reactions between calcium hydroxide (CH), produced by the hydration of Portland cement, and silica (SiO2) from SCMs. These reactions can also involve alumina (Al2O3), leading to the formation of strätlingite. The presence of SCMs not only provides additional sources of silica and alumina but also lowers the pH of the pore solution, which can favor the formation of strätlingite."@en ;
                                            skos:altLabel "Ca₂Al₂SiO₇·8H₂O"@en ;
                                            skos:prefLabel "Strätlingite"@en ;
@@ -92,7 +82,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_1317e1d1-a718-5b92-a329-37d1df0e8072
 :EMMO_1317e1d1-a718-5b92-a329-37d1df0e8072 rdf:type owl:Class ;
-                                           rdfs:subClassOf :PortlandCementAnhydrousPhase ;
+                                           rdfs:subClassOf :EMMO_383f8673-23de-410a-8e7b-3c5d0504b84d ;
                                            rdfs:comment "it ranges from 5% to 20% in portland cement"@en ;
                                            skos:altLabel "2CaO·SiO₂"@en ;
                                            skos:prefLabel "Belite"@en ;
@@ -101,7 +91,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_140e70c1-9d83-535d-b570-4036231ae532
 :EMMO_140e70c1-9d83-535d-b570-4036231ae532 rdf:type owl:Class ;
-                                           rdfs:subClassOf :AFtPhase ;
+                                           rdfs:subClassOf :EMMO_9208404c-f10c-4fd3-8976-5a106f5bb4f0 ;
                                            skos:prefLabel "AFt-TriCarboaluminate"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 " is the carbonate equivalent of ettringite,"@en .
 
@@ -138,7 +128,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_2458f451-380e-5eb0-92bc-fe10a428241f
 :EMMO_2458f451-380e-5eb0-92bc-fe10a428241f rdf:type owl:Class ;
-                                           rdfs:subClassOf :RareHydrate ;
+                                           rdfs:subClassOf :EMMO_4a67f042-fbf0-40e0-9d45-41c69be77403 ;
                                            rdfs:comment "Rare in cement, may affect durability."@en ;
                                            skos:altLabel "Ca₃Al₂(SiO₄)(OH)₆"@en ;
                                            skos:prefLabel "Katoite"@en ;
@@ -155,7 +145,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_2ba7bc05-e20a-52e3-9461-3fc64b811641
 :EMMO_2ba7bc05-e20a-52e3-9461-3fc64b811641 rdf:type owl:Class ;
-                                           rdfs:subClassOf :PortlandCementAnhydrousPhase ;
+                                           rdfs:subClassOf :EMMO_383f8673-23de-410a-8e7b-3c5d0504b84d ;
                                            rdfs:comment "it ranges from 2% to 16% in Portland cement.  It also exists in nature as the rare mineral brownmillerite. Provides the characteristic grey color to Portland cement."@en ;
                                            skos:altLabel """ 4CaO·Al₂O₃·Fe₂O₃
 """@en ,
@@ -181,13 +171,28 @@
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a dehydroxylated form of the clay mineral kaolinite. Metakaolin is commonly used in the production of ceramics, but is also used as cement replacement in concrete."@en .
 
 
+###  https://w3id.org/emmo/domain/concrete#EMMO_34ab92dc-7a70-4ceb-a327-bd059cb6dfe0
+:EMMO_34ab92dc-7a70-4ceb-a327-bd059cb6dfe0 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_643d99dd_fae6_4121_a76f_47f486a4480b ;
+                                           skos:altLabel "CCN"@en ;
+                                           skos:prefLabel "CementChemistNotation"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A chemical notation developed to simplify formulas for cement chemistry. It is a shorthand way of writing the chemical formula of oxides of calcium, silicon, and various metals."@en ;
+                                           emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Cement_chemist_notation" .
+
+
 ###  https://w3id.org/emmo/domain/concrete#EMMO_36086553-d52e-5c3f-8312-27ab86c9c49c
 :EMMO_36086553-d52e-5c3f-8312-27ab86c9c49c rdf:type owl:Class ;
-                                           rdfs:subClassOf :RareHydrate ;
+                                           rdfs:subClassOf :EMMO_4a67f042-fbf0-40e0-9d45-41c69be77403 ;
                                            rdfs:comment "Contributes to the long-term strength."@en ;
                                            skos:altLabel "Mg₆Al₂CO₃(OH)₁₆·4H₂O"@en ;
                                            skos:prefLabel "Hydrotalcite"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hydrotalcite is a layered double hydroxide, a rare hydrate phase in cement."@en .
+
+
+###  https://w3id.org/emmo/domain/concrete#EMMO_383f8673-23de-410a-8e7b-3c5d0504b84d
+:EMMO_383f8673-23de-410a-8e7b-3c5d0504b84d rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+                                           skos:prefLabel "PortlandCementAnhydrousPhase"@en .
 
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_3899bb37-263c-5d0e-8715-91937b9490e5
@@ -201,7 +206,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_428c9697-4d24-5723-8802-15bd4dba1bb5
 :EMMO_428c9697-4d24-5723-8802-15bd4dba1bb5 rdf:type owl:Class ;
-                                           rdfs:subClassOf :Hydrate ;
+                                           rdfs:subClassOf :EMMO_cc8133e1-1f0f-4805-a7e5-835ec79b2c13 ;
                                            rdfs:comment "Influences sulfate resistance."@en ;
                                            skos:altLabel "Ca₄Al₂(SO₄)(OH)₁₂·6H₂O"@en ;
                                            skos:prefLabel "KuzelSalts"@en ;
@@ -210,10 +215,16 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_466cfd3c-4350-573a-b5ef-e748a666fcd7
 :EMMO_466cfd3c-4350-573a-b5ef-e748a666fcd7 rdf:type owl:Class ;
-                                           rdfs:subClassOf :PortlandCementAnhydrousPhase ;
+                                           rdfs:subClassOf :EMMO_383f8673-23de-410a-8e7b-3c5d0504b84d ;
                                            skos:altLabel "3CaO·SiO₂"@en ;
                                            skos:prefLabel "C3SM3"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "C3S (M3) refers to a polymorph of tricalcium silicate, an essential phase in Portland cement."@en .
+
+
+###  https://w3id.org/emmo/domain/concrete#EMMO_4a67f042-fbf0-40e0-9d45-41c69be77403
+:EMMO_4a67f042-fbf0-40e0-9d45-41c69be77403 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_cc8133e1-1f0f-4805-a7e5-835ec79b2c13 ;
+                                           skos:prefLabel "RareHydrate"@en .
 
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_5030c2a2-f260-5e0c-9e32-741f506d83f7
@@ -281,7 +292,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_81341a27-41f5-566d-8d3f-1aa6122981da
 :EMMO_81341a27-41f5-566d-8d3f-1aa6122981da rdf:type owl:Class ;
-                                           rdfs:subClassOf :PortlandCementAnhydrousPhase ;
+                                           rdfs:subClassOf :EMMO_383f8673-23de-410a-8e7b-3c5d0504b84d ;
                                            rdfs:comment "it ranges from 5% to 20% in portland cement"@en ;
                                            skos:altLabel "3CaO·Al₂O₃"@en ;
                                            skos:prefLabel "TriCalciumAluminate"@en ;
@@ -290,7 +301,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_81e4e6fd-6cc0-513d-ad0f-66ab89c42ee3
 :EMMO_81e4e6fd-6cc0-513d-ad0f-66ab89c42ee3 rdf:type owl:Class ;
-                                           rdfs:subClassOf :PortlandCementAnhydrousPhase ;
+                                           rdfs:subClassOf :EMMO_383f8673-23de-410a-8e7b-3c5d0504b84d ;
                                            skos:altLabel " FreeLime"@en ,
                                                          " QuickLime"@en ,
                                                          "CaO"@en ;
@@ -307,7 +318,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_8625c40a-bceb-5f91-ab7d-8d9c1f4da858
 :EMMO_8625c40a-bceb-5f91-ab7d-8d9c1f4da858 rdf:type owl:Class ;
-                                           rdfs:subClassOf :PortlandCementAnhydrousPhase ;
+                                           rdfs:subClassOf :EMMO_383f8673-23de-410a-8e7b-3c5d0504b84d ;
                                            rdfs:comment "Prevents flash setting of cement or controls the setting time of cement. It also contributes to the strength development of cement."@en ;
                                            skos:altLabel "CaSO₄·2H₂O"@en ;
                                            skos:prefLabel "Gypsum"@en ;
@@ -330,6 +341,15 @@
                                            rdfs:subClassOf owl:Thing ;
                                            skos:prefLabel "PSDLaserDiffractionSurfaceArea"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Particle Size Distribution (PSD) analysis using laser diffraction, a technique that measures the size of particles in a sample by analyzing the scattering pattern produced when a laser beam passes through it"@en .
+
+
+###  https://w3id.org/emmo/domain/concrete#EMMO_9208404c-f10c-4fd3-8976-5a106f5bb4f0
+:EMMO_9208404c-f10c-4fd3-8976-5a106f5bb4f0 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+                                           skos:altLabel "AluminateFerriteTrisubstitutedPhase"@en ;
+                                           skos:prefLabel "AFtPhase"@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "AFt Phases refer to the calcium Aluminate Ferrite trisubstituted, or calcium aluminate trisubstituted, phases present in hydrated (or hardened) cement paste. They are crystalline hydrates with generic formula 3CaO·(Al,Fe)2O3·3CaX·nH2O"@en ;
+                                           emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "AFt phases are formed when tricalcium aluminate (3CaO·Al2O3, also noted C3A) reacts with a dissolved calcium salt (CaX). CaX is most commonly CaSO4, but can also be CaCO3 giving rise to sulfoaluminate, or carboaluminate, respectively."@en .
 
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_93c65ada-3120-5356-a3d9-18de1154afdf
@@ -364,7 +384,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_9ef544cf-d7c6-5a02-a500-de2602a6ef1b
 :EMMO_9ef544cf-d7c6-5a02-a500-de2602a6ef1b rdf:type owl:Class ;
-                                           rdfs:subClassOf :Hydrate ;
+                                           rdfs:subClassOf :EMMO_cc8133e1-1f0f-4805-a7e5-835ec79b2c13 ;
                                            rdfs:comment "Affects durability."@en ;
                                            skos:altLabel "Ca₄Al₂(Cl₂)(OH)₁₂·4H₂O"@en ;
                                            skos:prefLabel "FriedelSalt"@en ;
@@ -407,7 +427,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_b2e4d4ed-1704-578b-a01f-caca51736ea2
 :EMMO_b2e4d4ed-1704-578b-a01f-caca51736ea2 rdf:type owl:Class ;
-                                           rdfs:subClassOf :Hydrate ;
+                                           rdfs:subClassOf :EMMO_cc8133e1-1f0f-4805-a7e5-835ec79b2c13 ;
                                            rdfs:comment "Contributes to the durability."@en ;
                                            skos:altLabel "Variable"@en ;
                                            skos:prefLabel "AFmMonohydrate"@en ;
@@ -425,7 +445,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_c12df015-a0e4-5df0-9e7c-fda389d50d9e
 :EMMO_c12df015-a0e4-5df0-9e7c-fda389d50d9e rdf:type owl:Class ;
-                                           rdfs:subClassOf :Hydrate ;
+                                           rdfs:subClassOf :EMMO_cc8133e1-1f0f-4805-a7e5-835ec79b2c13 ;
                                            rdfs:comment "The amount and properties of this phase influence significantly the mechanical and durability properties. itt fills about 50% of the space of mature portland cement paste"@en ;
                                            skos:altLabel "Variable"@en ;
                                            skos:prefLabel "C-S-H"@en ;
@@ -434,11 +454,17 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_c608264c-331a-5c05-8366-6145b511547b
 :EMMO_c608264c-331a-5c05-8366-6145b511547b rdf:type owl:Class ;
-                                           rdfs:subClassOf :RareHydrate ;
+                                           rdfs:subClassOf :EMMO_4a67f042-fbf0-40e0-9d45-41c69be77403 ;
                                            rdfs:comment "Affects chloride binding."@en ;
                                            skos:altLabel "KAl₂(AlSi₃O₁₀)(OH)₂"@en ;
                                            skos:prefLabel "Muscovite"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Muscovite is a common mica mineral."@en .
+
+
+###  https://w3id.org/emmo/domain/concrete#EMMO_c6a569d5-b4cc-4d51-8b3d-16a34437702f
+:EMMO_c6a569d5-b4cc-4d51-8b3d-16a34437702f rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_383f8673-23de-410a-8e7b-3c5d0504b84d ;
+                                           skos:prefLabel "CalciumSulfateAnhydrite"@en .
 
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_c7de144e-58fa-5d70-81b7-b00872f693bf
@@ -450,11 +476,17 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_cb68633d-2efd-5edb-b95f-08635e492a5b
 :EMMO_cb68633d-2efd-5edb-b95f-08635e492a5b rdf:type owl:Class ;
-                                           rdfs:subClassOf :Hydrate ;
+                                           rdfs:subClassOf :EMMO_cc8133e1-1f0f-4805-a7e5-835ec79b2c13 ;
                                            rdfs:comment "Improves durability."@en ;
                                            skos:altLabel "Ca₄Al₂(CO₃)(OH)₁₂·5H₂O"@en ;
                                            skos:prefLabel "AfmMonocarboaluminate"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "AfmMonocarboaluminate is a hydrated calcium aluminate carbonate."@en .
+
+
+###  https://w3id.org/emmo/domain/concrete#EMMO_cc8133e1-1f0f-4805-a7e5-835ec79b2c13
+:EMMO_cc8133e1-1f0f-4805-a7e5-835ec79b2c13 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+                                           skos:prefLabel "Hydrate"@en .
 
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_db71390f-9d3d-5751-8320-fe7da5e84210
@@ -467,7 +499,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_dcd5bb56-a60e-5979-bdf4-2d7158ada5a7
 :EMMO_dcd5bb56-a60e-5979-bdf4-2d7158ada5a7 rdf:type owl:Class ;
-                                           rdfs:subClassOf :Hydrate ;
+                                           rdfs:subClassOf :EMMO_cc8133e1-1f0f-4805-a7e5-835ec79b2c13 ;
                                            rdfs:comment "Affects stability and durability."@en ;
                                            skos:altLabel "Variable"@en ;
                                            skos:prefLabel "AfmHemiCarboaluminate"@en ;
@@ -484,7 +516,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_e2da913c-cbe5-5084-882d-12f3d1ba93a9
 :EMMO_e2da913c-cbe5-5084-882d-12f3d1ba93a9 rdf:type owl:Class ;
-                                           rdfs:subClassOf :PortlandCementAnhydrousPhase ;
+                                           rdfs:subClassOf :EMMO_383f8673-23de-410a-8e7b-3c5d0504b84d ;
                                            rdfs:comment "C3A and alite are often not distinguished in casual conversations. Researchers clarify the difference only if relevant in the discussion context."@en ;
                                            skos:altLabel "3CaO·SiO₂"@en ;
                                            skos:prefLabel "C3S"@en ;
@@ -493,7 +525,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_e3e9fab8-cf2c-5024-941e-8fbd2a316a64
 :EMMO_e3e9fab8-cf2c-5024-941e-8fbd2a316a64 rdf:type owl:Class ;
-                                           rdfs:subClassOf :RareHydrate ;
+                                           rdfs:subClassOf :EMMO_4a67f042-fbf0-40e0-9d45-41c69be77403 ;
                                            skos:altLabel "Ca₃Al₂(SiO₄)(OH)₆"@en ;
                                            skos:prefLabel "Hydrogarnet"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Crystalline phase that belongs to the garnet group of minerals"@en .
@@ -536,7 +568,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_f8b4dd22-66b8-564c-8dee-e094492c5e54
 :EMMO_f8b4dd22-66b8-564c-8dee-e094492c5e54 rdf:type owl:Class ;
-                                           rdfs:subClassOf :PortlandCementAnhydrousPhase ;
+                                           rdfs:subClassOf :EMMO_383f8673-23de-410a-8e7b-3c5d0504b84d ;
                                            rdfs:comment "Prevents flash setting of cement or controls the setting time of cement. It also contributes to the strength development of cement."@en ;
                                            skos:altLabel "CaSO₄·0.5H₂O"@en ;
                                            skos:prefLabel "CalciumSulfateHemihydrate"@en ;
@@ -545,7 +577,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_fc21cbcb-4e2d-5d13-8f7e-bb91b779ff22
 :EMMO_fc21cbcb-4e2d-5d13-8f7e-bb91b779ff22 rdf:type owl:Class ;
-                                           rdfs:subClassOf :AFtPhase ;
+                                           rdfs:subClassOf :EMMO_9208404c-f10c-4fd3-8976-5a106f5bb4f0 ;
                                            rdfs:comment "Initially forms during the early stages of hydration as a result of the reaction between tricalcium aluminate (C3A) and gypsum (added to the cement to control setting time) in the presence of water."@en ;
                                            skos:altLabel """ Ca₆Al₂(SO₄)₃(OH)₁₂·26H₂O
 """@en ,
@@ -559,21 +591,6 @@
                                            rdfs:subClassOf owl:Thing ;
                                            skos:prefLabel "PSDLaserDiffractionDv50"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the median particle size diameter obtained from laser diffraction analysis, indicating the particle size below which 50% of the distribution lies"@en .
-
-
-###  https://w3id.org/emmo/domain/concrete#Hydrate
-:Hydrate rdf:type owl:Class ;
-         rdfs:subClassOf emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a .
-
-
-###  https://w3id.org/emmo/domain/concrete#PortlandCementAnhydrousPhase
-:PortlandCementAnhydrousPhase rdf:type owl:Class ;
-                              rdfs:subClassOf emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a .
-
-
-###  https://w3id.org/emmo/domain/concrete#RareHydrate
-:RareHydrate rdf:type owl:Class ;
-             rdfs:subClassOf :Hydrate .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -22,10 +22,11 @@
 #    Classes
 #################################################################
 
-###  https://w3id.org/emmo#Image
-:Image rdf:type owl:Class ;
-          rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
-          rdfs:comment "" .
+###  https://w3id.org/emmo#EMMO_45f64092-651a-41f3-a2a1-8e25ec42611b
+:EMMO_45f64092-651a-41f3-a2a1-8e25ec42611b rdf:type owl:Class ;
+    skos:prefLabel "Image"@en ;
+    rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 2D dataset formed by the detector in SEM or TEM."@en .
 
 
 ###  https://w3id.org/emmo/application/concrete#EMMO_13e82238-e959-5e91-b0d2-152ab4dfcc94
@@ -59,7 +60,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_284b42c0-2dbf-5b36-852f-f40a744c8d3f
 :EMMO_284b42c0-2dbf-5b36-852f-f40a744c8d3f rdf:type owl:Class ;
-                                           rdfs:subClassOf :Image ;
+                                           rdfs:subClassOf :EMMO_45f64092-651a-41f3-a2a1-8e25ec42611b ;
                                            skos:prefLabel "ClusterAnhydrous"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Image in black and white showing the Anhydrous segment as obtained by clustering algorithms"@en .
 
@@ -67,7 +68,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_5c0e705c-31c7-534b-9881-72bbf5f892fa
 :EMMO_5c0e705c-31c7-534b-9881-72bbf5f892fa rdf:type owl:Class ;
-                                           rdfs:subClassOf :Image ;
+                                           rdfs:subClassOf :EMMO_45f64092-651a-41f3-a2a1-8e25ec42611b ;
                                            skos:prefLabel "ClusterPortlandite"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Image in black and white showing the Portlandite segment as obtained by clustering algorithms"@en .
 
@@ -75,7 +76,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_aa9d6fe5-daae-5cb7-afbe-a02808c5bbf0
 :EMMO_aa9d6fe5-daae-5cb7-afbe-a02808c5bbf0 rdf:type owl:Class ;
-                                           rdfs:subClassOf :Image ;
+                                           rdfs:subClassOf :EMMO_45f64092-651a-41f3-a2a1-8e25ec42611b ;
                                            skos:prefLabel "ClusterHydratesExceptPortlandite"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Image in black and white showing the hydrates segment (the portlandite being excluded) as obtained by clustering algorithms"@en .
 
@@ -84,7 +85,7 @@
 
 ###  https://w3id.org/emmo/domain/concrete#EMMO_d525e674-b5ce-5651-abfc-a2dc1d54d806
 :EMMO_d525e674-b5ce-5651-abfc-a2dc1d54d806 rdf:type owl:Class ;
-                                           rdfs:subClassOf :Image ;
+                                           rdfs:subClassOf :EMMO_45f64092-651a-41f3-a2a1-8e25ec42611b ;
                                            skos:prefLabel "ClusterPorosity"@en ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Image in black and white showing the pore space segment as obtained by clustering algorithms"@en .
 
