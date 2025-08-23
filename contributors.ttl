@@ -10,14 +10,14 @@
 @prefix emmo: <https://w3id.org/emmo#> .
 
 <https://w3id.org/emmo/domain/pwmfc/contributors> rdf:type owl:Ontology ;
-    owl:versionIRI <https://w3id.org/emmo/domain/concrete/0.0.1/contributors> ;
-    #owl:imports <https://w3id.org/emmo/domain/concrete/0.0.1/dependencies> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/concrete/0.5.0/contributors> ;
+    #owl:imports <https://w3id.org/emmo/domain/concrete/0.5.0/dependencies> ;
     owl:imports <https://w3id.org/emmo/domain/concrete/dependencies> ;
     dcterms:abstract "People and organisations who has contributed to the development of the Domain Ontology for Concrete."@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Contributors"@en ;
-    owl:versionInfo "0.0.1" ;
+    owl:versionInfo "0.5.0" ;
     foaf:mbox <mailto:emmo@emmc.eu> .
 
 

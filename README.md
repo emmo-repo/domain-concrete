@@ -29,7 +29,8 @@ Version dependencies on imported ontologies:
 
 | Version | [EMMO] | [ECHO]      | [CHEMS]     | [Micro] | [CHAMEO] |
 |---------|--------|-------------|-------------|---------|----------|
-| 0.0.1   | 1.0.0  | 0.30.0-beta | 0.12.2-beta | 0.3.1   | 1.0.0    |
+| 0.0.1   | latest |             |             |         |          |
+| 0.5.0   | 1.0.0  | 0.30.0-beta | 0.12.2-beta | 0.3.1   | 1.0.0    |
 
 
 
