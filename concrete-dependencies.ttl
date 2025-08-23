@@ -7,4 +7,4 @@
         <https://w3id.org/emmo/domain/electrochemistry/0.30.0-beta/source> ,
         <https://w3id.org/emmo/domain/chemical-substance/0.12.1-beta/source> ,
         <https://w3id.org/emmo/domain/microstructure/0.3.1/source> ,
-        <https://w3id.org/emmo/domain/characterisation-methodology/1.0.0/source> .
+        <https://w3id.org/emmo/domain/characterisation-methodology/chameo/1.0.0/source> .
