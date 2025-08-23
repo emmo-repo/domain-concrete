@@ -30,3 +30,10 @@ doc:AlexandreOuzia rdf:type owl:NamedIndividual ;
     skos:prefLabel "Alexandre Ouzia" ;
     foaf:name "Alexandre Ouzia" ;
     foaf:workplaceHomepage <https://www.heidelbergmaterials.com/en> .
+
+doc:SophieSchmid rdf:type owl:NamedIndividual ;
+    :EMMO_e117f976_7a5d_4508_bf85_9226dca58e1f <https://orcid.org/0000-0003-4781-3976> ;
+    skos:altLabel "SophieSchmid" ;
+    skos:prefLabel "Sophie Schmid" ;
+    foaf:name "Sophie Schmid" ;
+    foaf:workplaceHomepage <https://www.tuwien.at/en/> .

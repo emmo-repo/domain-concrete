@@ -28,6 +28,7 @@
 The aim is to support both  modelling and characterisation.
 """@en ;
     dcterms:created "2024-01-07"^^xsd:date ;
+    dcterms:contributor :SophieSchmid ;
     dcterms:creator :AlexandreOuzia , emmo:FrancescaBleken , emmo:JesperFriis ;
     dcterms:issued "2025-03-10"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
@@ -35,6 +36,7 @@ The aim is to support both  modelling and characterisation.
     dcterms:modified "2025-08-23"^^xsd:date ;
     dcterms:publisher <https://he-matchmaker.eu> ;
     dcterms:title "Domain Ontology for Concrete (DOC)"@en ;
+    bibo:bibliographicCitation <https://doi.org/10.5281/zenodo.16932399> ;
     bibo:status "unstable" ;
     vann:preferredNamespacePrefix "doc" ;
     vann:preferredNamespaceUri "https://w3id.org/emmo/domain/concrete" ;
