@@ -2,7 +2,11 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="https://w3id.org/emmo" uri="https://w3id.org/emmo/1.0.0"/>
-        <uri name="https://w3id.org/emmo/domain/concrete/0.0.1" uri="concrete.ttl"/>
-        <uri name="https://w3id.org/emmo/application/concrete/0.0.1" uri="application.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/concrete/0.0.1"               uri="concrete.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/concrete/0.0.1/contributors"  uri="contributors.ttl"/>
+
+        <uri name="https://w3id.org/emmo/application/concrete/0.0.1"          uri="application.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/sem/0.0.1"                    uri="sem.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/tem/0.0.1"                    uri="tem.ttl"/>
     </group>
 </catalog>
