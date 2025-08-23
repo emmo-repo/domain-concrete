@@ -61,14 +61,15 @@ Attributions and credits
 
 License
 -------
-The concrete domain ontology is released under the [Creative Commons
-Attribution 4.0
-International](https://creativecommons.org/licenses/by/4.0/legalcode)
-license (CC-BY-4.0).
+The concrete domain ontology is released under the [Creative Commons Attribution 4.0 International] license (CC-BY-4.0).
 
 
 [EMMO]: https://github.com/emmo-repo/EMMO
-[domain-microstructure]: https://github.com/emmo-repo/domain-microstructure
-[domain-concrete]: https://github.com/emmo-repo/domain-concrete
+[ECHO]: https://github.com/emmo-repo/domain-electrochemistry
+[CHEMS]: https://github.com/emmo-repo/domain-chemical-substance
+[Battery]: https://github.com/emmo-repo/domain-battery
+[Micro]: https://github.com/emmo-repo/domain-microstructure
+[CHAMEO]: https://github.com/emmo-repo/domain-characterisation-methodology
 [github-ssh]: https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+[Creative Commons Attribution 4.0 International]: https://creativecommons.org/licenses/by/4.0/legalcode
 [MatCHMaker]: https://he-matchmaker.eu/
