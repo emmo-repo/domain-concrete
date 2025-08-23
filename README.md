@@ -4,9 +4,10 @@ Domain Ontology for Concrete (DOC)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15767822.svg)](https://doi.org/10.5281/zenodo.15767822)
 -->
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-![CI tests](https://github.com/emmo-repo/EMMO/domain-concrete/workflows/CI%20tests/badge.svg)
+[![CI tests](https://github.com/emmo-repo/domain-concrete/actions/workflows/ci_tests.yml/badge.svg)](https://github.com/emmo-repo/domain-concrete/actions/workflows/ci_tests.yml)
 [![FOOPS Score](https://img.shields.io/badge/FOOPS%20Score-79.0%25-yellow)](https://foops.linkeddata.es/FAIR_validator.html)
-[![GitHub release](https://img.shields.io/github/v/release/emmo-repo/emmo/domain-concrete)](https://emmo-repo.github.io/)
+
+[![GitHub release](https://img.shields.io/github/v/release/emmo-repo/domain-concrete)](https://emmo-repo.github.io/)
 <!--
 ![docs](https://github.com/emmo-repo/domain-concrete/actions/workflows/docs-build-and-deploy.yml/badge.svg)
 [![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)
